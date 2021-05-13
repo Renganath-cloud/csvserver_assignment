@@ -2,6 +2,7 @@ Creation of Script:
 vim gencsv.sh
 
 #!/bin/bash
+
 awk 'BEGIN {
       # seed
        srand()
@@ -26,6 +27,7 @@ docker run --privileged=true -d -v /root/csvserver/inputdata/inputFile:/csvserve
 docker exec -it c455bf0d9ff5 /bin/bash
 
 [root@c455bf0d9ff5 csvserver]# netstat -tulpn
+
 Active Internet connections (only servers)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
 tcp6       0      0 :::9300                 :::*                    LISTEN      1/csvserver
