@@ -9,10 +9,3 @@ services:
       - "9393:9300"
     volumes: 
       - "/root/csvserver_assignment/solution/inputFile:/csvserver/inputdata:z"
-
-  prometheus:
-    image: prom/prometheus:v2.22.0
-    volumes:
-      - "/root/csvserver_assignment/solution/prometheus.yml:/etc/prometheus/prometheus.yml:z"
-    ports:
-      - 9090:9090
